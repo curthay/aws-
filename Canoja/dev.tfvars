@@ -1,0 +1,21 @@
+region                    = "us-east-1"
+vpc_id                    = "vpc-0c529f31d15705b3a"
+private_subnet_ids        = ["subnet-0123456789abcdef0", "subnet-0fedcba9876543210"]
+security_group_id         = "sg-0123456789abcdef0"
+lambda_role_arn           = "arn:aws:iam::123456789012:role/lambda_vpc_execution_role"
+sns_topic_arn             = "arn:aws:sns:us-east-1:123456789012:CanojaVerify-ETL-Topic"
+
+mysql_db_endpoint         = "dev-db.example.com"
+mysql_db_name             = "dev_database"
+mysql_db_username         = "dev_user"
+mysql_db_password         = "dev_password"
+mysql_db_port             = "3306"
+LOGURU_LEVEL              = "DEBUG"
+teams_webhook_url         = "https://outlook.office.com/webhook/..."
+etl_environment           = "DEV"
+
+lambda_function_s3_bucket = "your-bucket-name"
+lambda_function_s3_key    = "lambda_function.zip"
+lambda_layer_s3_bucket    = "your-bucket-name"
+lambda_layer_s3_key       = "lambda_layer.zip"
+pandas_layer_arn          = "arn:aws:lambda:us-east-1:336392948345:layer:AWSSDKPandas-Python39:2"
